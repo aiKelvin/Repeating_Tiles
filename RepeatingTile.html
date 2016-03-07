@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+body{
+	margin:48px;
+	background: #000;
+	font-family: Arial, Helvetica, sans-serif;
+}
+div#banner{
+	width: 1000px;
+	height: 300px;
+	margin: 0px auto;
+	border: #639 1px solid;
+	overflow: hidden;
+}
+div#banner > #banner_backdrop{
+	position: relative;
+	background: url(image.jpg) repeat-x;
+	width: 1500px;
+	height: 500px;
+	animation: backdrop_roll linear 15s infinite;
+}
+
+@keyframes backdrop_roll {
+	from { right: 0px;}
+	to { right: 500px;}
+}
+
+div#banner > #banner_content{
+	position: relative;
+	width: 96%;
+	height: 160px;
+	margin: 20px auto;
+	top: -200px;
+	color:#FFFFFF;
+	font-size:24px;
+}
+
+</style>
+
+</head>
+<body>
+
+<div id = "banner">
+	<div id="banner_backdrop"></div>
+	<div id="banner_content">
+		Hello, Have a Nice Day!!
+	</div>
+</div>
+
+</body>
+</html>
